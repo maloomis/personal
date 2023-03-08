@@ -1,6 +1,4 @@
 .App {
-  margin-left: 300px;
-  margin-right: 200px;
   color: #696969;
 }
 
@@ -13,16 +11,162 @@ header {
 .Nav-bar {
   font-size: 20px;
   margin-top: 30px;
+  position: fixed;
+
+  a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #696969;
+    position: relative;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #c2d0fd;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::before {
+    transform: scaleX(1);
+  }
+
+  a:hover {
+    color: #c2d0fd;
+  }
 }
 
-a {
-  padding-right: 30px;
-  text-decoration: none;
-  color: #696969;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-decoration-color: #c2d0fd;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.home {
+  background: url("../src/images/background.jpeg") no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  padding-top: 200px;
+  padding-left: 200px;
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: -20px;
+    font-family: "Playfair Display";
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: "Poppins";
+  }
+
+  .socials {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      padding-right: 0px;
+    }
+
+    .LinkedIn {
+      display: block;
+    }
+
+    a:hover .LinkedIn {
+      display: none;
+    }
+
+    a:hover .LinkedInHover {
+      display: block;
+    }
+
+    .GithubHover {
+      display: none;
+    }
+
+    .Github {
+      display: block;
+    }
+
+    a:hover .Github {
+      display: none;
+    }
+
+    a:hover .GithubHover {
+      display: block;
+    }
+
+    .LinkedInHover {
+      display: none;
+    }
+
+    .ResumeHover {
+      display: none;
+    }
+
+    .Resume {
+      display: block;
+    }
+
+    a:hover .Resume {
+      display: none;
+    }
+
+    a:hover .ResumeHover {
+      display: block;
+    }
+  }
+
+  -webkit-animation: slideup 1s; /* Safari, Chrome and Opera > 12.1 */
+  animation: slideup 1s;
+
+  @keyframes slideup {
+    from {
+      margin-bottom: -500px;
+    }
+    to {
+      margin-bottom: 0px;
+    }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes slideup {
+    from {
+      padding-top: -500px;
+    }
+    to {
+      padding-top: 0px;
+    }
+  }
+
+  .portrait {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+
+  .intro {
+    padding-top: 30px;
+    padding-left: 100px;
+    margin-right: -100px;
+  }
 }
