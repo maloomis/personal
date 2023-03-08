@@ -1,0 +1,105 @@
+.Home {
+  justify-content: left;
+  text-align: left;
+  padding-left: 250px;
+
+  -webkit-animation: slideup 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slideup 1s; /* Firefox < 16 */
+  -ms-animation: slideup 1s; /* Internet Explorer */
+  -o-animation: slideup 1s; /* Opera < 12.1 */
+  animation: slideup 1s;
+}
+
+.Hello {
+  flex-direction: column;
+  padding-top: 80px;
+  padding-right: 50px;
+  color: #fff3f2;
+}
+
+.Socials {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  padding-right: 15px;
+}
+
+b {
+  color: #a876f5;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Playfair Display";
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Poppins";
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+}
+
+.Portrait {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding-right: 0px;
+}
+
+@keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slideup {
+  from {
+    padding-top: 400px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
