@@ -1,0 +1,28 @@
+.App {
+  margin-left: 300px;
+  margin-right: 200px;
+  color: #696969;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.Nav-bar {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+a {
+  padding-right: 30px;
+  text-decoration: none;
+  color: #696969;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #c2d0fd;
+}

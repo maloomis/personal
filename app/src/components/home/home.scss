@@ -1,0 +1,154 @@
+@import "../../mixins";
+
+.Home {
+  justify-content: left;
+  text-align: left;
+  color: #696969;
+
+  -webkit-animation: slideup 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slideup 1s; /* Firefox < 16 */
+  -ms-animation: slideup 1s; /* Internet Explorer */
+  -o-animation: slideup 1s; /* Opera < 12.1 */
+  animation: slideup 1s;
+
+  .Socials {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+
+    a {
+      padding-right: 0px;
+    }
+
+    .LinkedIn {
+      display: block;
+    }
+
+    a:hover .LinkedIn {
+      display: none;
+    }
+
+    a:hover .LinkedInHover {
+      display: block;
+    }
+
+    .GithubHover {
+      display: none;
+    }
+
+    .Github {
+      display: block;
+    }
+
+    a:hover .Github {
+      display: none;
+    }
+
+    a:hover .GithubHover {
+      display: block;
+    }
+
+    .LinkedInHover {
+      display: none;
+    }
+
+    .ResumeHover {
+      display: none;
+    }
+
+    .Resume {
+      display: block;
+    }
+
+    a:hover .Resume {
+      display: none;
+    }
+
+    a:hover .ResumeHover {
+      display: block;
+    }
+  }
+}
+
+.Hello {
+  flex-direction: column;
+  padding-top: 80px;
+  padding-right: 50px;
+}
+
+img {
+  padding-right: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Playfair Display";
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Poppins";
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+}
+
+.Portrait {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding-right: 0px;
+}
+
+@keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideup {
+  from {
+    padding-top: 100px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes slideup {
+  from {
+    padding-top: 400px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
