@@ -1,6 +1,59 @@
 .about {
   background: #fff;
-  opacity: 0.5;
   flex-basis: 100%;
-  padding-top: 500px;
+  height: 100vh;
+  min-height: 80rem;
+  max-height: 120rem;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  p {
+    font-size: 14px;
+    font-family: "Poppins";
+  }
+
+  .hiking {
+    margin-right: 20px;
+    margin-top: 50px;
+    height: 590px;
+    width: 490px;
+  }
+
+  .knowMe {
+    font-size: 50px;
+    font-family: "Playfair Display";
+    margin-top: 80px;
+    font-weight: bold;
+  }
+
+  .skills {
+    font-size: 50px;
+    font-family: "Playfair Display";
+    justify-content: center;
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .bio {
+    background-color: #c0e2fd;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: -40px;
+  }
+
+  .logos {
+    flex-basis: 100%;
+    justify-content: center;
+    padding-left: 50px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      padding-right: 20px;
+    }
+  }
 }
